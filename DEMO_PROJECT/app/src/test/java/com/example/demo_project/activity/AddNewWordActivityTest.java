@@ -1,6 +1,5 @@
 package com.example.demo_project.activity;
 
-import com.example.demo_project.database.WordDatabase;
 import com.example.demo_project.entity.Word;
 
 import junit.framework.TestCase;

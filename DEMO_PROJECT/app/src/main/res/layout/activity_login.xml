@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.RegisterActivity"
+    tools:context=".activity.LoginActivity"
     android:background="@color/white">
     <ScrollView
         android:layout_width="match_parent"
@@ -23,9 +23,9 @@
                     android:id="@+id/text_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/fugaz_one"
                     android:text="WELCOME BACK,\n    PLEASE\n        SIGN IN"
                     android:textColor="@color/white"
@@ -34,10 +34,10 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="280dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="9dp"
-                    android:layout_toRightOf="@+id/text_login"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/text_login"
                     android:src="@drawable/banner_login" />
             </RelativeLayout>
             <RelativeLayout
@@ -52,9 +52,9 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/bg_edit_text_login"
-                    android:hint="Name"
-                    android:paddingLeft="20dp"
-                    android:textColorHint="@color/blue" />
+                    android:hint="User Name"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/demo3" />
 
                 <EditText
                     android:id="@+id/et_register_pass"
@@ -65,17 +65,17 @@
                     android:background="@drawable/bg_edit_text_login"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:paddingLeft="20dp"
-                    android:textColorHint="@color/blue" />
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/demo3" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Forgot Password"
                     android:layout_below="@id/et_register_pass"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:paddingTop="10dp"
-                    android:textColor="@color/blue"/>
+                    android:text="Forgot Password"
+                    android:textColor="@color/demo3" />
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="or sign in with"
-                    android:textColor="@color/blue" />
+                    android:textColor="@color/orange" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

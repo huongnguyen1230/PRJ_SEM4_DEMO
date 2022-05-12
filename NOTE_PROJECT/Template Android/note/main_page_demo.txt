@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/search"
+            android:hint="Search"
+            android:textSize="23sp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/avt_user"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/avt_user"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/avt_user"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rank_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/info_user">
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baloo_tamma"
+                    android:text="WELCOME BACK !!!"
+                    android:textColor="@color/purple_700"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/name_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcome"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:text="Nguyen Huong"
+                    android:textColor="@color/yellow"
+                    android:textSize="20sp" />
+                <LinearLayout
+                    android:id="@+id/rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_user"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alatsi"
+                        android:text="+ Rank: "
+                        android:textColor="@color/yellow"
+                        android:textSize="17sp" />
+                    <TextView
+                        android:id="@+id/rank_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alatsi"
+                        android:text="Gold"
+                        android:textColor="@color/yellow"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rank"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alatsi"
+                        android:text="+ Point: "
+                        android:textColor="@color/yellow"
+                        android:textSize="17sp" />
+                    <TextView
+                        android:id="@+id/point_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alatsi"
+                        android:text="10000"
+                        android:textColor="@color/yellow"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/info_user">
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@mipmap/banner_launcher_foreground"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_text"
+        android:layout_below="@id/rank_main_page">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Menu"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_text"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_directory" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_bottom"
+        android:elevation="10dp"
+        app:menu="@menu/bottom_menu">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            android:backgroundTint="@color/purple_200"
+            android:layout_gravity="center"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/header_title"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_edit_text_register">
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_centerInParent="true"
+                android:hint="Search"
+                android:textColorHint="@color/white"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_search_24" />
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avt_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@id/header_title"
+            android:src="@drawable/avt_user" />     
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_top_main_page">
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="25dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:fontFamily="@font/alata"-->
+<!--                    android:text="Hello,"-->
+<!--                    android:textColor="@color/demo"-->
+<!--                    android:textSize="40sp" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_username_main_page"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Nguyen Huong"-->
+<!--                    android:fontFamily="@font/alata"-->
+<!--                    android:textColor="@color/demo"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:layout_marginStart="25dp"/>-->
+<!--            </LinearLayout>-->

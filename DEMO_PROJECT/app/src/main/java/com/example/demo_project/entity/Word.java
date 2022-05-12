@@ -1,46 +1,26 @@
 package com.example.demo_project.entity;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
-@Entity(tableName = "words")
-public class Word implements Serializable {
-    @PrimaryKey(autoGenerate = true)
+public class Word{
     public int id;
     public String name;
     public String content;
     public String pronounce;
     public String part_of_speech;
     public int user_id;
-    @TypeConverters(DateConverter.class)
-    public Date last_remind;
-    @TypeConverters(DateConverter.class)
-    public Date category_type;
+    public String last_remind;
+    public int category_type;
     public int success_time;
-    @TypeConverters(DateConverter.class)
-    public Date created_at;
-    @TypeConverters(DateConverter.class)
-    public Date updated_at;
-
-    public Word(int id, String name, String content, String pronounce, String part_of_speech, int user_id, Date last_remind, Date category_type, int success_time, Date created_at, Date updated_at) {
-        this.id = id;
-        this.name = name;
-        this.content = content;
-        this.pronounce = pronounce;
-        this.part_of_speech = part_of_speech;
-        this.user_id = user_id;
-        this.last_remind = last_remind;
-        this.category_type = category_type;
-        this.success_time = success_time;
-        this.created_at = created_at;
-        this.updated_at = updated_at;
-    }
+    public String created_at;
+    public String updated_at;
 
     public Word() {
     }
@@ -60,6 +40,7 @@ public class Word implements Serializable {
         this.part_of_speech = part_of_speech;
     }
 
+
     public int getId() {
         return id;
     }
@@ -76,12 +57,28 @@ public class Word implements Serializable {
         this.name = name;
     }
 
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     public String getPronounce() {
         return pronounce;
     }
 
     public void setPronounce(String pronounce) {
         this.pronounce = pronounce;
+    }
+
+    public String getPart_of_speech() {
+        return part_of_speech;
+    }
+
+    public void setPart_of_speech(String part_of_speech) {
+        this.part_of_speech = part_of_speech;
     }
 
     public int getUser_id() {
@@ -92,19 +89,19 @@ public class Word implements Serializable {
         this.user_id = user_id;
     }
 
-    public Date getLast_remind() {
+    public String getLast_remind() {
         return last_remind;
     }
 
-    public void setLast_remind(Date last_remind) {
+    public void setLast_remind(String last_remind) {
         this.last_remind = last_remind;
     }
 
-    public Date getCategory_type() {
+    public int getCategory_type() {
         return category_type;
     }
 
-    public void setCategory_type(Date category_type) {
+    public void setCategory_type(int category_type) {
         this.category_type = category_type;
     }
 
@@ -116,36 +113,20 @@ public class Word implements Serializable {
         this.success_time = success_time;
     }
 
-    public Date getCreated_at() {
+    public String getCreated_at() {
         return created_at;
     }
 
-    public void setCreated_at(Date created_at) {
+    public void setCreated_at(String created_at) {
         this.created_at = created_at;
     }
 
-    public Date getUpdated_at() {
+    public String getUpdated_at() {
         return updated_at;
     }
 
-    public void setUpdated_at(Date updated_at) {
+    public void setUpdated_at(String updated_at) {
         this.updated_at = updated_at;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getPart_of_speech() {
-        return part_of_speech;
-    }
-
-    public void setPart_of_speech(String part_of_speech) {
-        this.part_of_speech = part_of_speech;
     }
 
     @Override

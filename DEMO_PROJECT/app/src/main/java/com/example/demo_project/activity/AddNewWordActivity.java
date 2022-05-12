@@ -10,13 +10,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.demo_project.R;
-import com.example.demo_project.database.WordDatabase;
 import com.example.demo_project.entity.Word;
 
 public class AddNewWordActivity extends AppCompatActivity {
     private EditText etWord, etWordMeaning, etPartOfSpeech;
-    private Button btnSubmit;
-    WordDatabase db;
+    private Button btnSubmit;;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +29,6 @@ public class AddNewWordActivity extends AppCompatActivity {
             //your codes here
 
         }
-        db = WordDatabase.getAppDatabase(this);
         initData();
         initListener();
 
@@ -54,7 +51,6 @@ public class AddNewWordActivity extends AppCompatActivity {
                 newWord.setName(word);
                 newWord.setContent(meaningWord);
                 newWord.setPart_of_speech(partOfSpeech);
-                db.wordDao().insertWord(newWord);
                 Toast.makeText(AddNewWordActivity.this, "Add new word successful", Toast.LENGTH_SHORT).show();
             }
         });

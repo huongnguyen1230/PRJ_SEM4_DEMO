@@ -1,6 +1,7 @@
 package com.example.demo_project.adapter;
 
 import android.app.Activity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -13,7 +14,7 @@ import com.example.demo_project.entity.Word;
 
 import java.util.List;
 
-public class WordAdapter extends RecyclerView.Adapter {
+public class WordAdapter extends RecyclerView.Adapter<WordAdapter.ViewHolder> {
     private Activity activity;
     private List<Word> listWord;
     public WordAdapter(Activity activity, List<Word> listWord){
@@ -22,30 +23,29 @@ public class WordAdapter extends RecyclerView.Adapter {
     }
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = activity.getLayoutInflater().inflate(R.layout.item_list_word, parent, false);
-        WordHolder holder = new WordHolder(itemView);
-        return holder;
+    public ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(activity).inflate(R.layout.item_list_word, parent,false);
+        return new ViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        WordHolder wordHolder = (WordHolder) holder;
-        Word model = listWord.get(position);
-        wordHolder.tvWord.setText(model.getName());
-        wordHolder.tvMeaning.setText(model.getContent());
-        wordHolder.tvPartOfSpeech.setText(model.getPart_of_speech());
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Word word = listWord.get(position);
+        holder.tvWord.setText(word.getName());
+        holder.tvMeaning.setText(word.getContent());
+        holder.tvPartOfSpeech.setText(word.getPart_of_speech());
     }
 
     @Override
     public int getItemCount() {
         return listWord.size();
     }
-    public class WordHolder extends RecyclerView.ViewHolder{
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
         TextView tvWord;
         TextView tvMeaning;
         TextView tvPartOfSpeech;
-        public WordHolder(@NonNull View itemView){
+        public ViewHolder(@NonNull View itemView){
             super(itemView);
             tvWord = itemView.findViewById(R.id.tv_word);
             tvMeaning = itemView.findViewById(R.id.tv_meaning);

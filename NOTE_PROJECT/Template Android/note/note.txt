@@ -1,0 +1,9 @@
+- Mỗi lần nhắc nhở sẽ bắn notification cho người dùng
+- Lần đầu từ sẽ được nhắc nhở 1 ngày 1 lần
+- Hệ thống nhắc nhở liên tục 1 ngày 1 lần trong 3 ngày đầu. 
+- Sau 3 ngày:
+	+ nếu user xác nhận đã thuộc, thì chuyển kiểu nhắc nhở sang 3 ngày/ 1 lần, 
+tương tự với các kiểu nhắc nhở còn lại.
+	+ nếu chưa, thì sẽ tiếp tục nhắc 1 ngày/1 lần trong 3 ngày.
+- Thời gian nhắc nhở:
+	+ nếu thời gian hiện tại - thời gian nhắc nhở = 

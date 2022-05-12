@@ -1,0 +1,8 @@
+TIM HIEU USE CASE
+
+1, Dinh nghia
+
+2, muc dich
+3, ki hieu
+4, 2 vi du
+5, moi quan he voi activity, sequence, class.

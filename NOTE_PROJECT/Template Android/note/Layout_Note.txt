@@ -1,0 +1,24 @@
+TRANG CHỦ CỦA APP
+- Đăng nhập - Đăng kí
+- Thanh search các từ của user (thêm button mũi tên)
+- Thêm từ mới
+- Danh sách tất cả các từ cần nhắc nhở
+- Danh sách các từ đã nhớ
+- Danh sách các bài viết liên quan đến học từ vựng
+
+TRANG SEARCH 
+
+TRANG ACCOUNT
+
+- Avatar
+- User Name
+- Button Edit ( nhảy sang trang mới để edit )
+- Card view ( User infor : email, sdt, address)
+- Card View 2 ( Rank của các user khác ) 
+- Card View 3 ( Điểm cá nhân )
+- Edit account
+
+SETTING 
+- Card view 1: đặt thời gian nhắc nhở trong ngay
+- Card view 2: 
+

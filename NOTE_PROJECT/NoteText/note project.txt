@@ -1,0 +1,8 @@
+học từ vựng, ngữ pháp TA
+phương pháp học TA
+
+1, nhắc học lại từ vựng, từ mới ...
+nhắc cách quãng 3 ngày, 7 ngày( có notification)
+có thể lưu vào dsach mới nếu quên
+	+ danh sách gần đây (nhắc thường xuyên)
+	+ dsach đã thuộc( cách quãng)
