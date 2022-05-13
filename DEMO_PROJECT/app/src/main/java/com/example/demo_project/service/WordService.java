@@ -1,6 +1,5 @@
 package com.example.demo_project.service;
 
-import com.example.demo_project.entity.ListWordResponse;
 import com.example.demo_project.entity.Word;
 
 import java.util.List;

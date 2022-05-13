@@ -1,0 +1,19 @@
+TOP BANNER
+
+<RelativeLayout
+        android:id="@+id/top_banner_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/search_main_page"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/search"
+            app:tint="@color/white"/>
+    </RelativeLayout>

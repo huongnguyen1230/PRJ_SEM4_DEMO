@@ -10,7 +10,6 @@ import android.os.StrictMode;
 
 import com.example.demo_project.R;
 import com.example.demo_project.adapter.WordAdapter;
-import com.example.demo_project.entity.ListWordResponse;
 import com.example.demo_project.entity.Word;
 import com.example.demo_project.service.WordService;
 import com.example.demo_project.util.RetrofitGenerator;

@@ -43,7 +43,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="20dp"
-                    android:src="@drawable/ic_baseline_settings_24"
+                    android:src="@drawable/settings"
                     app:tint="@color/white" />
 
             </RelativeLayout>
@@ -73,7 +73,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -147,13 +148,13 @@
 
                     <ImageView
                         android:id="@+id/edit_user_btn"
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:src="@drawable/edit"
-                        app:tint="@color/demo3"/>
+                        app:tint="@color/white" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
