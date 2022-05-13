@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Setting"
+                android:text="Cài đặt"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -41,20 +41,20 @@
             android:layout_marginTop="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="100dp"
                 android:orientation="horizontal"
                 android:background="@color/gray">
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="40dp"
                     android:src="@drawable/time_clock"
                     app:tint="@color/demo3"
                     android:layout_marginStart="20dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reminder Time"
+                    android:text="Thời gian nhắc nhở trong ngày"
                     android:textColor="@color/demo3"
                     android:textSize="25sp"
                     android:textStyle="bold"
@@ -85,7 +85,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Start Time"
+                        android:text="Thời gian bắt đầu"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
                     <LinearLayout
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
-                    android:text="End Time"
+                    android:text="Thời gian kết thúc"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
                 <LinearLayout
@@ -178,7 +178,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="30dp"
                         android:backgroundTint="@color/demo3"
-                        android:text="CANCEL"
+                        android:text="HỦY"
                         android:textSize="20sp"
                         android:textColor="@color/orange"/>
 
@@ -187,7 +187,7 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/demo3"
-                        android:text="OK"
+                        android:text="ĐỒNG Ý"
                         android:textColor="@color/orange"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -203,7 +203,7 @@
             android:layout_marginTop="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:orientation="horizontal"
                 android:background="@color/gray">
                 <ImageView
@@ -216,7 +216,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Log Out"
+                    android:text="Đăng xuất"
                     android:textColor="@color/demo3"
                     android:textSize="25sp"
                     android:textStyle="bold"

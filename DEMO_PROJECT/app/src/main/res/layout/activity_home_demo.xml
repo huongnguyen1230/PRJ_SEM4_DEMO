@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello,"
+                android:text="Xin chào,"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"/>
@@ -68,7 +68,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/baloo"
                         android:padding="20dp"
-                        android:text="Add new word"
+                        android:text="Thêm từ mới"
                         android:textSize="30sp" />
 
                     <ImageView
@@ -97,19 +97,20 @@
                         android:layout_alignParentEnd="true"
                         android:fontFamily="@font/baloo"
                         android:padding="20dp"
-                        android:text="Words for reminding"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"/>
+                        android:text="Danh sách từ nhắc nhở"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
                         android:padding="20dp"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
+                        android:text="Xem thêm"
                         android:textColor="@color/white"
-                        android:text="See all"/>
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="90dp"
@@ -134,18 +135,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_alignParentLeft="true"                        android:fontFamily="@font/baloo"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/baloo"
                         android:padding="20dp"
-                        android:text="List of remembered words"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"/>
+                        android:text="Danh sách từ đã nhớ"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:padding="20dp"
-                        android:text="See all"
+                        android:text="Xem thêm"
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -166,7 +168,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:text="Share with you"
+            android:text="Mách nhỏ cho bạn"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>

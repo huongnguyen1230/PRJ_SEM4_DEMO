@@ -1,0 +1,8 @@
+Trang
+1, FORGOT PASSWORD
+- form điền sđt
+- form điền otp
+- form nhập mât khẩu mới -> back lại login
+2, Form edit account
+Click vào btn edit mở ra trang mới
+Có các trường: user name, phone, email

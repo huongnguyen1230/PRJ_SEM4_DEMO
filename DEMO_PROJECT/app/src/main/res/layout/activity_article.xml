@@ -9,6 +9,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/orange">
+            <ImageView
+                android:id="@+id/btn_back_article"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/white" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/settings"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
         <TextView
             android:id="@+id/article_title"
             android:layout_width="match_parent"

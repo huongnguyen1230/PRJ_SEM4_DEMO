@@ -102,7 +102,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:text="Meaning: "
+                            android:text="Nghĩa của từ: "
                             android:textColor="@color/black"
                             android:textSize="30sp"
                             android:textStyle="bold" />
@@ -142,7 +142,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:text="Example: "
+                            android:text="Ví dụ: "
                             android:textColor="@color/black"
                             android:textSize="30sp"
                             android:textStyle="bold" />
