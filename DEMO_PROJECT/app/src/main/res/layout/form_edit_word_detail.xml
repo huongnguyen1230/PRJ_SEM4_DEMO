@@ -68,7 +68,7 @@
                 android:id="@+id/ti_word"
                 android:layout_marginTop="20dp">
                 <EditText
-                    android:id="@+id/etWord"
+                    android:id="@+id/edit_etWord"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Từ cần edit"
@@ -83,7 +83,7 @@
                     android:id="@+id/ti_pos"
                     android:layout_marginTop="20dp">
                     <EditText
-                        android:id="@+id/etPartOfSpeech"
+                        android:id="@+id/edit_etPartOfSpeech"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Loại từ"
@@ -97,7 +97,7 @@
                     android:id="@+id/ti_meaning"
                     android:layout_marginTop="20dp">
                     <EditText
-                        android:id="@+id/etWordMeaning"
+                        android:id="@+id/edit_etWordMeaning"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Nghĩa của từ"
@@ -110,7 +110,7 @@
                     android:id="@+id/ti_example"
                     android:layout_marginTop="20dp">
                     <EditText
-                        android:id="@+id/etWordExample"
+                        android:id="@+id/edit_etWordExample"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Ví dụ"
@@ -123,7 +123,7 @@
                     android:id="@+id/ti_trans"
                     android:layout_marginTop="20dp">
                     <EditText
-                        android:id="@+id/etExampleTrans"
+                        android:id="@+id/edit_etExampleTrans"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Nghĩa của ví dự"
