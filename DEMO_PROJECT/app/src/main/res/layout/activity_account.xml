@@ -26,8 +26,19 @@
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="15dp"
                     android:src="@drawable/ic_arrow_back"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/btn_back_account"
+                    android:text="Tài khoản "
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -106,7 +117,7 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/email_user"
                             android:text="huong@gmail.com"
-                            android:textColor="@color/orange"
+                            android:textColor="@color/demo"
                             android:textStyle="bold"
                             android:textSize="18sp"
                             android:layout_marginStart="15dp"/>
@@ -131,7 +142,7 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/phone_user"
                             android:text="0987654321"
-                            android:textColor="@color/orange"
+                            android:textColor="@color/demo"
                             android:textStyle="bold"
                             android:textSize="18sp"
                             android:layout_marginStart="15dp"/>

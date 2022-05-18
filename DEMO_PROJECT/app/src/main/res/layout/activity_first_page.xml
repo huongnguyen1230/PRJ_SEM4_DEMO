@@ -62,7 +62,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="hoặc đăng nhâp bằng"
-        android:textColor="@color/orange"
+        android:textColor="@color/demo"
         android:textSize="15sp"
         android:textStyle="bold" />
 

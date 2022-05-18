@@ -18,10 +18,7 @@
             android:name=".PopUpLogOutActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SearchActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.SettingActivity"
+            android:name=".activity.demo.SettingActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ListWordRememberActivity"
@@ -30,10 +27,10 @@
             android:name=".activity.ListWordRemindActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.AccountActivity"
+            android:name=".activity.demo.AccountActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.HomeActivity"
+            android:name=".activity.demo.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".activity.DetailWord"

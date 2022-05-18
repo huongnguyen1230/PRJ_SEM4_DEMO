@@ -19,7 +19,7 @@
                 android:id="@+id/top_banner"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@drawable/bg_top_detail_word"
+                android:background="@color/demo"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -170,17 +170,17 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
                         android:src="@drawable/trans"
-                        app:tint="@color/black"/>
+                        app:tint="@color/black" />
 
                     <TextView
                         android:id="@+id/word_detail_example_trans"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
-                        android:text="xe ô tô đỏ"
                         android:layout_marginTop="6dp"
-                        android:textSize="25sp"
-                        android:textColor="@color/blue"/>
+                        android:text="xe ô tô đỏ"
+                        android:textColor="@color/blue"
+                        android:textSize="25sp" />
                 </LinearLayout>
             </RelativeLayout>
         </RelativeLayout>

@@ -13,6 +13,8 @@ public class Word{
     public int id;
     public String name;
     public String content;
+    public String example;
+    public String translated_example;
     public String pronounce;
     public String part_of_speech;
     public int user_id;
@@ -25,21 +27,21 @@ public class Word{
     public Word() {
     }
 
-    public Word(int id, String name, String content, String pronounce, String part_of_speech) {
+    public Word(int id, String name, String content, String example, String translated_example, String pronounce, String part_of_speech, int user_id, String last_remind, int category_type, int success_time, String created_at, String updated_at) {
         this.id = id;
         this.name = name;
         this.content = content;
+        this.example = example;
+        this.translated_example = translated_example;
         this.pronounce = pronounce;
         this.part_of_speech = part_of_speech;
+        this.user_id = user_id;
+        this.last_remind = last_remind;
+        this.category_type = category_type;
+        this.success_time = success_time;
+        this.created_at = created_at;
+        this.updated_at = updated_at;
     }
-
-    public Word(int id, String name, String content, String part_of_speech) {
-        this.id = id;
-        this.name = name;
-        this.content = content;
-        this.part_of_speech = part_of_speech;
-    }
-
 
     public int getId() {
         return id;
@@ -63,6 +65,22 @@ public class Word{
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getExample() {
+        return example;
+    }
+
+    public void setExample(String example) {
+        this.example = example;
+    }
+
+    public String getExampleTrans() {
+        return translated_example;
+    }
+
+    public void setExampleTrans(String exampleTrans) {
+        this.translated_example = exampleTrans;
     }
 
     public String getPronounce() {
@@ -127,23 +145,6 @@ public class Word{
 
     public void setUpdated_at(String updated_at) {
         this.updated_at = updated_at;
-    }
-
-    @Override
-    public String toString() {
-        return "Word{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", content='" + content + '\'' +
-                ", pronounce='" + pronounce + '\'' +
-                ", part_of_speech='" + part_of_speech + '\'' +
-                ", user_id=" + user_id +
-                ", last_remind=" + last_remind +
-                ", category_type=" + category_type +
-                ", success_time=" + success_time +
-                ", created_at=" + created_at +
-                ", updated_at=" + updated_at +
-                '}';
     }
 
     public static class DateConverter {

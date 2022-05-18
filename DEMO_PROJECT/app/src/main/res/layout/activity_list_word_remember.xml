@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".activity.ListWordRememberActivity"
     android:padding="20dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg_blue">
     <TextView
         android:id="@+id/directory_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Danh sách các từ đã nhớ"
-        android:textColor="@color/demo3"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginTop="30dp"/>

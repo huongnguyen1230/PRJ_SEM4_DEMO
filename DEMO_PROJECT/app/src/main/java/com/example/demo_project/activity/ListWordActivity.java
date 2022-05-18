@@ -11,6 +11,7 @@ import android.os.StrictMode;
 import com.example.demo_project.R;
 import com.example.demo_project.adapter.WordAdapter;
 import com.example.demo_project.entity.Word;
+import com.example.demo_project.entity.WordResponse;
 import com.example.demo_project.service.WordService;
 import com.example.demo_project.util.RetrofitGenerator;
 
@@ -38,12 +39,6 @@ public class ListWordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_word);
         initData();
         initView();
-//        WordAdapter adapter = new WordAdapter(this,words);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-//
-//        RecyclerView rvWord = findViewById(R.id.rvWord);
-//        rvWord.setLayoutManager(layoutManager);
-//        rvWord.setAdapter(adapter);
     }
 
     private void initView() {
@@ -54,16 +49,17 @@ public class ListWordActivity extends AppCompatActivity {
     }
 
     private void initData() {
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
         words = new ArrayList<>();
         if (wordService == null){
             wordService = RetrofitGenerator.createService(WordService.class);
         }
         try {
-            Response<List<Word>> listResponse = wordService.getAll().execute();
+            Response<WordResponse> listResponse = wordService.getAll().execute();
             if (listResponse.isSuccessful()){
-               words.addAll(listResponse.body());
+               words.addAll(listResponse.body().getContent());
             }
-            System.out.println(listResponse.body());
         }catch (IOException e){
             e.printStackTrace();
         }

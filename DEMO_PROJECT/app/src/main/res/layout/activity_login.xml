@@ -54,7 +54,7 @@
                     android:background="@drawable/bg_edit_text_login"
                     android:hint="Tên đăng nhập"
                     android:paddingStart="20dp"
-                    android:textColorHint="@color/demo3" />
+                    android:textColorHint="@color/demo" />
 
                 <EditText
                     android:id="@+id/et_register_pass"
@@ -66,7 +66,7 @@
                     android:hint="Mật khẩu"
                     android:inputType="textPassword"
                     android:paddingStart="20dp"
-                    android:textColorHint="@color/demo3" />
+                    android:textColorHint="@color/demo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,14 +75,15 @@
                     android:layout_alignParentEnd="true"
                     android:paddingTop="10dp"
                     android:text="Quên mật khẩu?"
-                    android:textColor="@color/demo3" />
+                    android:textColor="@color/blue" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/et_register_pass"
                     android:paddingTop="10dp"
                     android:text="Bạn chưa có tài khoản?"
-                    android:textColor="@color/demo3" />
+                    android:textColor="@color/blue" />
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -104,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="hoặc đăng nhập bằng"
-                    android:textColor="@color/orange" />
+                    android:textColor="@color/blue" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
