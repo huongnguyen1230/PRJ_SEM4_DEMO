@@ -26,8 +26,7 @@
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="15dp"
                     android:src="@drawable/ic_arrow_back"
-                    app:tint="@color/white"
-                    />
+                    app:tint="@color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -39,7 +38,9 @@
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
                 <ImageView
+                    android:id="@+id/setting_account_page"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_alignParentEnd="true"
@@ -60,7 +61,7 @@
                     android:layout_marginTop="20dp"
                     android:src="@drawable/avt_directory" />
                 <TextView
-                    android:id="@+id/name_user"
+                    android:id="@+id/name_user_account_page"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -115,7 +116,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/email_user"
+                            android:id="@+id/email_user_account_page"
                             android:text="huong@gmail.com"
                             android:textColor="@color/demo"
                             android:textStyle="bold"
@@ -140,7 +141,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/phone_user"
+                            android:id="@+id/phone_user_account_page"
                             android:text="0987654321"
                             android:textColor="@color/demo"
                             android:textStyle="bold"
@@ -149,7 +150,7 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/edit_user_btn"
+                        android:id="@+id/edit_user_btn_account_page"
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:layout_alignParentEnd="true"

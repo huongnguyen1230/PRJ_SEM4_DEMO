@@ -33,7 +33,7 @@
             android:name=".activity.demo.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.DetailWord"
+            android:name=".activity.DetailWordActivity"
             android:exported="false" />
         <activity
             android:name=".activity.AddNewWordActivity"
@@ -48,10 +48,10 @@
             android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ListWordActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.ListWordActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

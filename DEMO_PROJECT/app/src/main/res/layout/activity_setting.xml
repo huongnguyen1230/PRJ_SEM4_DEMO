@@ -16,6 +16,7 @@
             android:orientation="horizontal"
             android:background="@color/demo">
             <ImageView
+                android:id="@+id/btn_back_setting_page"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="25dp"

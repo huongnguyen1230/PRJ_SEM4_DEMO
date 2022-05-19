@@ -9,6 +9,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface WordService {
     @GET("api/v1/words")
@@ -19,5 +20,8 @@ public interface WordService {
 
     @POST("api/v1/words/save")
     Call<Word> addNewWord(@Body Word newWord);
+
+    @GET("api/v1/words/word-detail?")
+    Call<Word> getWordDetail(@Query("word-id") int wordId);
 
 }

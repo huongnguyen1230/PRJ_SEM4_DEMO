@@ -102,4 +102,5 @@ public class AddNewWordActivity extends AppCompatActivity {
             }
         });
     }
+
 }

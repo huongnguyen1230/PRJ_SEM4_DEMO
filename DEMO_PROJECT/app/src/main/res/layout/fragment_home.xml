@@ -29,7 +29,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/user_name"
+                    android:id="@+id/user_nameFragment"
                     android:text="Nguyen Huong"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -55,33 +55,45 @@
                     android:textStyle="bold"
                     android:textColor="@color/white"
                     android:layout_marginTop="20dp"/>
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="150dp"-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/add_word_home_page"
+                    app:cardElevation="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-<!--                    app:cardCornerRadius="20dp"-->
-<!--                    android:id="@+id/add_word_home_page"-->
-<!--                    app:cardElevation="15dp">-->
-<!--                    <RelativeLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content">-->
-
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:fontFamily="@font/baloo"-->
-<!--                            android:padding="20dp"-->
-<!--                            android:text="Thêm từ mới"-->
-<!--                            android:textSize="30sp" />-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/baloo"
+                            android:padding="20dp"
+                            android:text="Danh sách các của bạn"
+                            android:textSize="30sp"
+                            android:textColor="@color/demo3"/>
+                        <TextView
+                            android:id="@+id/all_view_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="20dp"
+                            android:text="Xem thêm"
+                            android:textColor="@color/demo3"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
 <!--                        <ImageView-->
 <!--                            android:layout_width="70dp"-->
 <!--                            android:layout_height="70dp"-->
 <!--                            android:layout_alignParentEnd="true"-->
 <!--                            android:layout_marginTop="60dp"-->
-<!--                            android:src="@drawable/add" />-->
-<!--                    </RelativeLayout>-->
-<!--                </androidx.cardview.widget.CardView>-->
+<!--                            android:src="" />-->
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -89,11 +101,13 @@
                     app:cardCornerRadius="20dp"
                     android:id="@+id/list_remind_home_page"
                     android:layout_marginTop="20dp"
-                    app:cardElevation="15dp">
+                    app:cardElevation="30dp">
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <TextView
+                            android:id="@+id/tv_remind_list_home_page"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
@@ -131,12 +145,13 @@
                     app:cardCornerRadius="20dp"
                     android:id="@+id/list_remember_home_page"
                     android:layout_marginTop="20dp"
-                    android:elevation="15dp">
+                    android:elevation="30dp">
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <TextView
+                            android:id="@+id/tv_remember_list_home_page"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_alignParentStart="true"

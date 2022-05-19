@@ -4,12 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.view.View;
+import android.widget.ImageView;
 
+import com.example.demo_project.MainActivity;
 import com.example.demo_project.R;
-import com.example.demo_project.adapter.WordAdapter;
+import com.example.demo_project.activity.demo.SettingActivity;
+import com.example.demo_project.adapter.ListWordAdapter;
 import com.example.demo_project.entity.Word;
 import com.example.demo_project.entity.WordResponse;
 import com.example.demo_project.service.WordService;
@@ -25,6 +30,7 @@ public class ListWordActivity extends AppCompatActivity {
     private List<Word> words;
     private RecyclerView rvWord;
     private WordService wordService;
+    private ImageView btn_back_list_word, btn_setting_list_word;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         int SDK_INT = Build.VERSION.SDK_INT;
@@ -39,13 +45,15 @@ public class ListWordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_word);
         initData();
         initView();
+        initBackView();
+        initSettingView();
     }
 
     private void initView() {
 
         rvWord = findViewById(R.id.rvWord);
         rvWord.setLayoutManager(new LinearLayoutManager(this));
-        rvWord.setAdapter(new WordAdapter(this, words));
+        rvWord.setAdapter(new ListWordAdapter(this, words));
     }
 
     private void initData() {
@@ -63,5 +71,25 @@ public class ListWordActivity extends AppCompatActivity {
         }catch (IOException e){
             e.printStackTrace();
         }
+    }
+    private void initBackView() {
+        btn_back_list_word = findViewById(R.id.btn_back_list_word);
+        btn_back_list_word.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListWordActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+    private void initSettingView() {
+        btn_setting_list_word = findViewById(R.id.btn_setting_list_word);
+        btn_setting_list_word.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListWordActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
