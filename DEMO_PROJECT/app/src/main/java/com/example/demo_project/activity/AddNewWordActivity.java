@@ -68,9 +68,9 @@ public class AddNewWordActivity extends AppCompatActivity {
                 Word newWord = new Word();
                 newWord.setName(word);
                 newWord.setContent(meaningWord);
-                newWord.setPart_of_speech(partOfSpeech);
+                newWord.setPartOfSpeech(partOfSpeech);
                 newWord.setExample(example);
-                newWord.setExampleTrans(translated_example);
+                newWord.setTranslated_example(translated_example);
                 newWord.setUser_id(1);
 
                 WordService wordService = RetrofitGenerator.createService(WordService.class);

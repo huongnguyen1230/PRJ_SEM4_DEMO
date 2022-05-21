@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     FrameLayout frameLayout;
     FloatingActionButton floatingActionButton;
     BottomNavigationView bottomNavigationView;
-    FragmentHome fragmentHome;
-    FragmentSearch fragmentSearch;
-    FragmentAccount fragmentAccount;
-    FragmentSetting fragmentSetting;
+    public static FragmentHome fragmentHome;
+    public static FragmentSearch fragmentSearch;
+    public static FragmentAccount fragmentAccount;
+    public static FragmentSetting fragmentSetting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

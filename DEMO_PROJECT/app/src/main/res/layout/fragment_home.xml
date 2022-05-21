@@ -14,18 +14,19 @@
             android:orientation="vertical">
             <!--    top page-->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="320dp"
                 android:orientation="vertical"
                 android:padding="25dp"
                 android:background="@drawable/top_home_page">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Xin chào,"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold"/>
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -33,12 +34,13 @@
                     android:text="Nguyen Huong"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:textSize="40sp"/>
+                    android:textSize="35sp"/>
                 <SearchView
                     android:id="@+id/searchView_homepage"
-                    android:layout_width="360dp"
-                    android:layout_height="60dp"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
                     android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
                     android:background="@drawable/bg_search_bar"/>
             </LinearLayout>
             <LinearLayout
@@ -61,7 +63,7 @@
                     android:layout_marginTop="20dp"
                     app:cardCornerRadius="20dp"
                     android:id="@+id/add_word_home_page"
-                    app:cardElevation="30dp">
+                    app:cardElevation="20dp">
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -71,9 +73,10 @@
                             android:layout_height="match_parent"
                             android:fontFamily="@font/baloo"
                             android:padding="20dp"
-                            android:text="Danh sách các của bạn"
-                            android:textSize="30sp"
-                            android:textColor="@color/demo3"/>
+                            android:text="Danh sách các từ đã thêm"
+                            android:textColor="@color/demo3"
+                            android:textSize="25sp" />
+
                         <TextView
                             android:id="@+id/all_view_more"
                             android:layout_width="wrap_content"
@@ -101,7 +104,7 @@
                     app:cardCornerRadius="20dp"
                     android:id="@+id/list_remind_home_page"
                     android:layout_marginTop="20dp"
-                    app:cardElevation="30dp">
+                    app:cardElevation="20dp">
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -145,7 +148,7 @@
                     app:cardCornerRadius="20dp"
                     android:id="@+id/list_remember_home_page"
                     android:layout_marginTop="20dp"
-                    android:elevation="30dp">
+                    android:elevation="20dp">
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -173,7 +176,7 @@
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_width="100dp"
+                            android:layout_width="70dp"
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:layout_centerInParent="true"
@@ -197,7 +200,7 @@
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
                 <androidx.cardview.widget.CardView
-                    android:layout_width="250dp"
+                    android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="22dp">

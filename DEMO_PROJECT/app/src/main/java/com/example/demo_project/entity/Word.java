@@ -16,7 +16,7 @@ public class Word{
     public String example;
     public String translated_example;
     public String pronounce;
-    public String part_of_speech;
+    public String partOfSpeech;
     public int user_id;
     public String last_remind;
     public int category_type;
@@ -27,14 +27,14 @@ public class Word{
     public Word() {
     }
 
-    public Word(int id, String name, String content, String example, String translated_example, String pronounce, String part_of_speech, int user_id, String last_remind, int category_type, int success_time, String created_at, String updated_at) {
+    public Word(int id, String name, String content, String example, String translated_example, String pronounce, String partOfSpeech, int user_id, String last_remind, int category_type, int success_time, String created_at, String updated_at) {
         this.id = id;
         this.name = name;
         this.content = content;
         this.example = example;
         this.translated_example = translated_example;
         this.pronounce = pronounce;
-        this.part_of_speech = part_of_speech;
+        this.partOfSpeech = partOfSpeech;
         this.user_id = user_id;
         this.last_remind = last_remind;
         this.category_type = category_type;
@@ -75,12 +75,12 @@ public class Word{
         this.example = example;
     }
 
-    public String getExampleTrans() {
+    public String getTranslated_example() {
         return translated_example;
     }
 
-    public void setExampleTrans(String exampleTrans) {
-        this.translated_example = exampleTrans;
+    public void setTranslated_example(String translated_example) {
+        this.translated_example = translated_example;
     }
 
     public String getPronounce() {
@@ -91,12 +91,12 @@ public class Word{
         this.pronounce = pronounce;
     }
 
-    public String getPart_of_speech() {
-        return part_of_speech;
+    public String getPartOfSpeech() {
+        return partOfSpeech;
     }
 
-    public void setPart_of_speech(String part_of_speech) {
-        this.part_of_speech = part_of_speech;
+    public void setPartOfSpeech(String partOfSpeech) {
+        this.partOfSpeech = partOfSpeech;
     }
 
     public int getUser_id() {

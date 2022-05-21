@@ -48,10 +48,10 @@
             android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.ListWordActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ListWordActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

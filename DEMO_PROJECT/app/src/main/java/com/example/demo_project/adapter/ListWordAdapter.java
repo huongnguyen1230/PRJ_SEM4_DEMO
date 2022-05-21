@@ -37,7 +37,7 @@ public class ListWordAdapter extends RecyclerView.Adapter<ListWordAdapter.ViewHo
         Word currentWord = words.get(position);
         holder.tvWord.setText(currentWord.getName());
         holder.tvMeaning.setText(currentWord.getContent());
-        holder.tvPartOfSpeech.setText(currentWord.getPart_of_speech());
+        holder.tvPartOfSpeech.setText(currentWord.getPartOfSpeech());
         holder.wordWrapper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

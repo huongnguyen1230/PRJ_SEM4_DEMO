@@ -45,13 +45,14 @@ public class DetailWordActivity extends AppCompatActivity {
         search_detail_word_page = findViewById(R.id.btn_search_detail_word_page);
     }
     private void initData() {
-        words =(List<Word>) getIntent().getSerializableExtra("words");
-        currentPosition = getIntent().getIntExtra("position", 0);
-        currentWord = words.get(currentPosition);
-        tvName_word_detail.setText(currentWord.getName());
-        tvPos_word_detail.setText(currentWord.getPart_of_speech());
-        tvWord_detail_meaning.setText(currentWord.getContent());
-        tvWord_detail_example.setText(currentWord.getExample());
-        tvWord_detail_example_trans.setText(currentWord.getExampleTrans());
+//        words =(List<Word>) getIntent().getSerializableExtra("words");
+//        currentPosition = getIntent().getIntExtra("position", 0);
+//        currentWord = words.get(currentPosition);
+//        tvName_word_detail.setText(currentWord.getName());
+//        tvPos_word_detail.setText(currentWord.getPart_of_speech());
+//        tvWord_detail_meaning.setText(currentWord.getContent());
+//        tvWord_detail_example.setText(currentWord.getExample());
+//        tvWord_detail_example_trans.setText(currentWord.getExampleTrans());
+        
     }
 }
