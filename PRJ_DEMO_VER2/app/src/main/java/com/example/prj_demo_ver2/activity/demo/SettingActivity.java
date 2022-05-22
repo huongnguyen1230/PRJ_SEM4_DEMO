@@ -1,8 +1,8 @@
-package com.example.demo_project.activity.demo;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.prj_demo_ver2.activity.demo;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.demo_project.R;
 

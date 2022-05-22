@@ -1,130 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.DetailWord">
-    <RelativeLayout
+    tools:context=".activity.DetailWordActivity">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:id="@+id/top_banner"
-            android:orientation="horizontal"
-            android:background="@color/blue">
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/word"
-            android:layout_below="@id/top_banner"
-            android:layout_marginStart="20dp">
-            <TextView
-                android:id="@+id/name_word_detail"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:text="Red"
-                android:textColor="@color/demo"
-                android:textSize="50sp" />
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/pos_word_detail"
+            <LinearLayout
+                android:id="@+id/top_banner"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/demo"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_back_detail_word_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="17dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <ImageView
+                    android:id="@+id/btn_search_detail_word_page"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="230dp"
+                    android:src="@drawable/ic_search" />
+
+                <ImageView
+                    android:id="@+id/btn_edit_detail_word_page"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/ic_baseline_edit_24" />
+            </LinearLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="35dp"
-                android:layout_toEndOf="@id/name_word_detail"
-                android:text="red"
-                android:textColor="@color/blue"
-                android:textSize="25sp" />
-        </RelativeLayout>
-        <LinearLayout
-            android:id="@+id/meaning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@id/word"
-            android:layout_marginStart="20dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/meaning"
-                    android:layout_marginTop="6dp"
-                    app:tint="#D7443E"/>
-                <TextView
+                android:layout_below="@id/top_banner">
+
+                <RelativeLayout
+                    android:id="@+id/word"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/name_word_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="Red"
+                        android:textColor="@color/demo"
+                        android:textSize="60sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pos_word_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_toEndOf="@id/name_word_detail"
+                        android:text="red"
+                        android:textColor="@color/purple_200"
+                        android:textSize="27sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/meaning"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Meaning: "
-                    android:textSize="25sp"
-                    android:layout_marginStart="10dp"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/word_detail_meaning"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="-hihihihihihihi"
-                android:textSize="20sp"
-                android:layout_marginStart="20dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/example"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@id/meaning"
-            android:layout_marginStart="20dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/example"
-                    android:layout_marginTop="6dp"
-                    app:tint="#D7443E"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Example: "
-                    android:textSize="25sp"
-                    android:layout_marginStart="10dp"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/word_detail_example"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="red car"
-                android:textSize="20sp"
-                android:layout_marginStart="20dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/example_trans"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@id/example"
-            android:layout_marginStart="20dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/trans"
-                    android:layout_marginTop="6dp"
-                    app:tint="#D7443E"/>
-                <TextView
-                    android:id="@+id/word_detail_example_trans"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_below="@id/word"
                     android:layout_marginStart="20dp"
-                    android:text="xe ô tô đỏ"
-                    android:textSize="20sp" />
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/meaning"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Nghĩa của từ: "
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/word_detail_meaning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="hahaha"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/example"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/meaning"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/example"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Ví dụ: "
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/word_detail_example"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="red car"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/example_trans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/example"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/trans"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/word_detail_example_trans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="6dp"
+                        android:text="xe ô tô đỏ"
+                        android:textColor="@color/blue"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

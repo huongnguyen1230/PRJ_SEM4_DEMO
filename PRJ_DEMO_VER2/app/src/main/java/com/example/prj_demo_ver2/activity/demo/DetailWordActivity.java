@@ -1,23 +1,15 @@
-package com.example.demo_project.activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.prj_demo_ver2.activity.demo;
 
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.demo_project.R;
 import com.example.demo_project.entity.Word;
-import com.example.demo_project.entity.WordResponse;
-import com.example.demo_project.service.WordService;
-import com.example.demo_project.util.RetrofitGenerator;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-
-import retrofit2.Response;
 
 public class DetailWordActivity extends AppCompatActivity {
     TextView tvName_word_detail, tvPos_word_detail, tvWord_detail_meaning, tvWord_detail_example, tvWord_detail_example_trans;

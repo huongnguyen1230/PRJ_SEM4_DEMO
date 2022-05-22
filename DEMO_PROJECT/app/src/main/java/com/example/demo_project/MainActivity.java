@@ -8,13 +8,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
-import com.example.demo_project.activity.AddNewWordActivity;
-import com.example.demo_project.activity.FragmentAccount;
-import com.example.demo_project.activity.FragmentHome;
-import com.example.demo_project.activity.FragmentSearch;
-import com.example.demo_project.activity.FragmentSetting;
+
+import com.example.demo_project.fragment.FragmentAccount;
+import com.example.demo_project.fragment.FragmentAddNewWordForm;
+import com.example.demo_project.fragment.FragmentHome;
+import com.example.demo_project.fragment.FragmentListWord;
+import com.example.demo_project.fragment.FragmentListWordRemember;
+import com.example.demo_project.fragment.FragmentListWordRemind;
+import com.example.demo_project.fragment.FragmentSearch;
+import com.example.demo_project.fragment.FragmentSetting;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
@@ -27,6 +30,10 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     public static FragmentSearch fragmentSearch;
     public static FragmentAccount fragmentAccount;
     public static FragmentSetting fragmentSetting;
+    public static FragmentAddNewWordForm fragmentAddNewWordForm;
+    public static FragmentListWordRemember fragmentListWordRemember;
+    public static FragmentListWordRemind fragmentListWordRemind;
+    public static FragmentListWord fragmentListWord;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +42,6 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     }
     private void initView() {
         floatingActionButton = findViewById(R.id.btn_floating_add);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AddNewWordActivity.class);
-                startActivity(intent);
-            }
-        });
 
         frameLayout = findViewById(R.id.frameLayout);
         bottomNavigationView = findViewById(R.id.btn_navigation_view);
@@ -52,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
         fragmentSearch = new FragmentSearch();
         fragmentAccount = new FragmentAccount();
         fragmentSetting = new FragmentSetting();
+        fragmentListWordRemember = new FragmentListWordRemember();
+        fragmentListWordRemind = new FragmentListWordRemind();
+        fragmentListWord = new FragmentListWord();
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.frameLayout, fragmentHome, FragmentHome.class.getName())
@@ -86,7 +89,13 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
                         .replace(R.id.frameLayout, fragmentSetting, FragmentSetting.class.getName())
                         .commit();
                 break;
+            case R.id.btn_floating_add:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.frameLayout, fragmentAddNewWordForm, FragmentAddNewWordForm.class.getName())
+                        .commit();
+                break;
         }
-        return false;
+        return true;
     }
 }

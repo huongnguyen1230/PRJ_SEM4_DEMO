@@ -1,8 +1,4 @@
-package com.example.demo_project.activity;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+package com.example.prj_demo_ver2.activity.demo;
 
 import android.content.Intent;
 import android.os.Build;
@@ -11,9 +7,12 @@ import android.os.StrictMode;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.demo_project.MainActivity;
 import com.example.demo_project.R;
-import com.example.demo_project.activity.demo.SettingActivity;
 import com.example.demo_project.adapter.ListWordAdapter;
 import com.example.demo_project.entity.Word;
 import com.example.demo_project.entity.WordResponse;

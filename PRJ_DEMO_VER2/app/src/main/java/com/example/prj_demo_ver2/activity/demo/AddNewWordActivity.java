@@ -1,6 +1,4 @@
-package com.example.demo_project.activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.prj_demo_ver2.activity.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.demo_project.MainActivity;
 import com.example.demo_project.R;
 import com.example.demo_project.entity.Word;
@@ -22,7 +22,6 @@ import com.google.gson.Gson;
 import java.io.IOException;
 
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class AddNewWordActivity extends AppCompatActivity {
     private EditText etWord, etWordMeaning, etPartOfSpeech, etWordExample, etExampleTrans;

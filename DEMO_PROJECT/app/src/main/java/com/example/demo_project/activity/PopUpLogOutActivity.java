@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.demo_project.R;
 
-public class ListWordRememberActivity extends AppCompatActivity {
+public class PopUpLogOutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_word_remember);
+        setContentView(R.layout.activity_pop_up_log_out);
     }
 }

@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/font/alata.xml" value="0.22685185185185186" />
+        <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_account.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_add_new_word.xml" value="0.20416666666666666" />
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_detail_word.xml" value="0.20416666666666666" />
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_first_page.xml" value="0.20416666666666666" />
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_list_word.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_list_word_remember.xml" value="0.20416666666666666" />
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_main.xml" value="0.24598269468479605" />
         <entry key="..\:/ANDROID_PRACTICE/PRJ_SEM4_DEMO/PRJ_DEMO_VER2/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />

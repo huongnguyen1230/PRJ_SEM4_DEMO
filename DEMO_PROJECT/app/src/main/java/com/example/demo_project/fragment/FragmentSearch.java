@@ -1,4 +1,4 @@
-package com.example.demo_project.activity;
+package com.example.demo_project.fragment;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
